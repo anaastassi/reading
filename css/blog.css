@@ -134,6 +134,10 @@ div.contentArticles {
   margin: auto;
 }
 .bodyM {
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: black;
   white-space: pre-wrap;
   text-align: center;
@@ -434,9 +438,12 @@ div.contentArticles {
     height: 57px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .buttonsWrap {
     padding-top: 58px;
+  }
+  .bodyM{
+    min-height: 58px;
   }
 }
 @media screen and (min-width: 1900px) {
