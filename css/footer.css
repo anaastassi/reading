@@ -1,0 +1,106 @@
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(92, 159, 249, 0.2) 100%
+  );
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.istaText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.instagram img {
+  width: 24px;
+  height: 23px;
+}
+.instagram {
+  display: flex;
+  gap: 11px;
+}
+.instagram span {
+  color: #5c9ff9;
+  font-size: 10px;
+  font-weight: 500;
+  align-self: center;
+}
+.details {
+  color: #000;
+  font-weight: 300;
+  font-size: 10px;
+}
+.scheduleTitle,
+.phoneTitle {
+  font-size: 8px;
+  font-weight: 700;
+}
+.hours,
+.numbers {
+  font-size: 8px;
+  font-weight: 300;
+}
+.schedule {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (min-width: 707px) {
+  .footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .istaText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+  }
+  .instagram img {
+    width: 55.566px;
+    height: 54px;
+  }
+  .instagram {
+    display: flex;
+    gap: 11px;
+  }
+  .instagram span {
+    font-size: 16px;
+  }
+  .details {
+    font-family: Raleway;
+    font-size: 14px;
+  }
+  .phones,
+  .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .scheduleTitle,
+  .phoneTitle {
+    font-size: 14px;
+  }
+  .hours,
+  .numbers {
+    font-size: 14px;
+  }
+  .schedule {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .schedule {
+    gap: 56px;
+  }
+}

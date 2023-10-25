@@ -1,4 +1,4 @@
-.slider{
+.slider {
   overflow: hidden;
 }
 .block {
@@ -18,21 +18,21 @@
   float: none;
   margin: 0 7px;
 }
-.sliderImg{
+.sliderImg {
   width: 100%;
-height: auto;
-position: relative;
+  height: auto;
+  position: relative;
 }
-.sliderImg img{
+.sliderImg img {
   width: 69px;
-height: 90px;
-border-radius: 13px;
+  height: 90px;
+  border-radius: 13px;
 }
-.sliderImg a{
+.sliderImg a {
   display: block;
 }
-.opacityDiv{
-  padding-left:4px ;
+.opacityDiv {
+  padding-left: 4px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -42,29 +42,34 @@ border-radius: 13px;
   position: absolute;
   top: 0;
   border-radius: 13px;
-  background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 43.23%, rgba(179, 177, 177, 0.29) 60.42%, rgba(228, 226, 226, 0.48) 81.25%);
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 43.23%,
+    rgba(179, 177, 177, 0.29) 60.42%,
+    rgba(228, 226, 226, 0.48) 81.25%
+  );
 }
-.h3{
+.h3 {
   margin-bottom: 0;
-  color: #FFF;
-font-family: Raleway;
-font-size: 8px;
-font-style: normal;
-font-weight: 900;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 900;
 }
-.articleTag{
-padding:1px 5px 1px 1px;
+.articleTag {
+  padding: 1px 5px 1px 1px;
   margin-bottom: 8px;
-  color: #FFF;
-font-family: Raleway;
-font-size: 4px;
-font-style: normal;
-font-weight: 600;
-border-radius: 5px;
-border: 0.7px solid #FFF;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 4px;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 0.7px solid #fff;
 }
 @media screen and (min-width: 700px) {
-  .sliderImg img{
+  .sliderImg img {
     width: 166px;
     height: 210px;
     border-radius: 26px;
@@ -72,24 +77,24 @@ border: 0.7px solid #FFF;
   .animation .sliderImg {
     margin: 0 20px;
   }
-  .h3{
-  font-size: 16px;
+  .h3 {
+    font-size: 16px;
   }
-  .articleTag{
+  .articleTag {
     font-size: 8px;
     border-radius: 10px;
-    padding:2px 4px;
+    padding: 2px 4px;
     margin-bottom: 10px;
   }
-  .opacityDiv{
-    padding-left:10px ;
+  .opacityDiv {
+    padding-left: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .opacityDiv{
+  .opacityDiv {
     border-radius: 26px;
   }
-  .sliderImg img{
+  .sliderImg img {
     width: 242px;
     height: 307px;
     border-radius: 26px;
@@ -97,18 +102,18 @@ border: 0.7px solid #FFF;
   .animation .sliderImg {
     margin: 0 22px;
   }
-  .h3{
+  .h3 {
     font-size: 24px;
-    }
-    .articleTag{
-      font-size: 12px;
-      border-radius: 10px;
-      padding:3px 6px;
-      margin-bottom: 19px;
-    }
-    .opacityDiv{
-      padding-left:12px ;
-    }
+  }
+  .articleTag {
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 3px 6px;
+    margin-bottom: 19px;
+  }
+  .opacityDiv {
+    padding-left: 12px;
+  }
 }
 @media screen and (min-width: 1400px) {
 }

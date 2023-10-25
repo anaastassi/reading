@@ -1,236 +1,412 @@
-.form{
-    background: #E8EFF9;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.form {
+  background: #e8eff9;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-#helpToChoose{
-    position: relative;
-    /*margin-bottom: 25px;*/
-    margin-top: -90px;
+#helpToChoose {
+  position: relative;
+  /*margin-bottom: 25px;*/
+  margin-top: -90px;
 }
-
-.helpFlex{
-    margin:auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap:wrap;
+.formInputs {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: left;
 }
-
-.formFlex{
-    max-width:1060px;
+.form-input-material input {
+  border-radius: 8px;
+  background: #d0cee6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 7px 7px;
+  color: #818181;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  height: 25px;
+  border-bottom: 1px solid black;
 }
-
-#sendbtn10{
-    position:absolute;
+.form-block__iphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #99c8ff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 76px;
+  height: 25px;
+  color: #006dff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
 }
-#helpform{
-    /*margin-bottom:20%;*/
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    width:600px;
-    position:relative;
+.phoneImg {
+  width: 17px;
+  height: 15px;
 }
-#telephone2{
-    width:600px;
-    margin:0;
+.helpFlex {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.formFlex h4{
-    margin-block-start: 0;
-    margin-block-end:0;
+.formTitle {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
 }
-.formFlex h5{
-    margin-block-end:4%;
-
+.formText {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
 }
-.FlexHorizontal{
-    display: flex;
-    flex-direction: row;
-    position:relative;
-    min-height: 287px;
-}
-.FlexHorizontal div{
-    margin-right:5%;
-}
-.FlexHorizontal form{
-    margin-top:0;
-}
-.helpContactBtn{
-    width: 176px;
-    height: 60px;
-}
-.inlineBlock{
-    display: inline-block;
-}
-.flexContacts{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    min-width: 360px;
-    align-items: self-end;
-
-}
-.flexContacts a:last-child{
-    margin-top: 15px;
+.formFlex {
+  max-width: 1060px;
 }
 
-#helpContacWh{
-    background: url(wh.png);
+#sendbtn10 {
+  position: absolute;
 }
-#helpContactTel{
-    background: url(tel.png);
+#helpform {
+  /*margin-bottom:20%;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 600px;
+  position: relative;
 }
-#helpContactVib{
-    background: url(viber.png);
+#telephone2 {
+  width: 600px;
+  margin: 0;
+}
+.formFlex h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.formFlex h5 {
+  margin-block-end: 4%;
+}
+.FlexHorizontal {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 287px;
+}
+.FlexHorizontal div {
+  margin-right: 5%;
+}
+.FlexHorizontal form {
+  margin-top: 0;
+}
+.helpContactBtn {
+  width: 176px;
+  height: 60px;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.flexContacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 360px;
+  align-items: self-end;
+}
+.flexContacts a:last-child {
+  margin-top: 15px;
+}
 
+#helpContacWh {
+  background: url(wh.png);
+}
+#helpContactTel {
+  background: url(tel.png);
+}
+#helpContactVib {
+  background: url(viber.png);
 }
 
 /* send field */
-.application input{
-    background: #FFFFFF;
-    /* grey2 */
-    border: 1px solid #9C9A9B;
-    border-radius: 200px;
-    width: 430px;
-    height: 50px;
-    left: 266px;
-    top: 452px;
-    padding-left:27px;
-    margin-top:1.5%;
-    margin-bottom:1.5%;
-    color: #9C9A9B;
-
+.application input {
+  background: #ffffff;
+  /* grey2 */
+  border: 1px solid #9c9a9b;
+  border-radius: 200px;
+  width: 430px;
+  height: 50px;
+  left: 266px;
+  top: 452px;
+  padding-left: 27px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  color: #9c9a9b;
 }
-.application{
-    margin-top:45px;
-    /* identical to box height */
-    color: #FFFFFF;
+.application {
+  margin-top: 45px;
+  /* identical to box height */
+  color: #ffffff;
 }
 #sendbtnShow {
-    position: absolute;
-    padding: 13px 35px;
+  position: absolute;
+  padding: 13px 35px;
 }
 .formBtn {
-    padding: 16px 24px;
-    width: 80px;
-    margin-bottom: 0%;
-    margin-right: 1px;
-    border: none;
-    transition: 1s;
+  padding: 16px 24px;
+  width: 80px;
+  margin-bottom: 0%;
+  margin-right: 1px;
+  border: none;
+  transition: 1s;
 }
 .btn {
-    align-self: center;
-    background: linear-gradient(180deg, #FFEC40 0%, #FC990F 100%);
-    border: none;
-    box-shadow: 0px 10px 30px rgba(245, 134, 52, 0.25);
-    border-radius: 100px;
-    padding: 15px 35px;
-    width: 34%;
-    margin-bottom: 2px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+  align-self: center;
+  background: linear-gradient(180deg, #ffec40 0%, #fc990f 100%);
+  border: none;
+  box-shadow: 0px 10px 30px rgba(245, 134, 52, 0.25);
+  border-radius: 100px;
+  padding: 15px 35px;
+  width: 34%;
+  margin-bottom: 2px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-origin: border-box;
+  color: #373435;
+  text-decoration: none;
+}
+
+.FlexHorizontal > div:last-child {
+  align-self: end;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    align-self: start;
+    margin-top: 20px;
+  }
+  .header__wrapper {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .helpFlex {
+    flex-direction: column;
+  }
+  .FlexHorizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .FlexHorizontal div {
+    margin-right: 0;
+  }
+  .formFlex h5 {
+    margin-block-end: 4%;
+    width: 100%;
     text-align: center;
-    background-origin: border-box;
-    color: #373435;
-    text-decoration: none;
-}
+  }
+  .formFlex {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .formFlex .FlexHorizontal {
+    margin-bottom: 0;
+    margin-top: -35px;
+  }
+  .application {
+    padding-left: 0;
+  }
+  #helpform {
+    width: 100%;
+    justify-content: center;
+  }
+  #telephone2 {
+    width: 86%;
+    height: 76px;
+    margin: 0;
+    left: 0;
+    right: 0;
+  }
+  #sendbtnShow {
+    border: 0;
+    margin-top: 2px;
+    right: 7.2%;
+    width: 73px;
+    height: 70px;
+    background: url(helpBtn.png);
+    background-position: center -20px;
+    content: "";
+    padding: 0;
+  }
+  .hideInMobile {
+    display: none;
+  }
 
-.FlexHorizontal>div:last-child{
-    align-self: end;
-}
+  .FlexHorizontal > div:last-child {
+    align-self: center;
+  }
 
-
-
-@media screen and (max-width: 1024px){
-    .header__logo{
-        align-self: start;
-        margin-top: 20px;
-    }
-    .header__wrapper{
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 1024px){
-    .helpFlex {
-        flex-direction: column;
-    }
-    .FlexHorizontal {
-        flex-direction: column;
-        align-items: center;
-    }
-    .FlexHorizontal div {
-        margin-right: 0;
-    }
-    .formFlex h5 {
-        margin-block-end: 4%;
-        width: 100%;
-        text-align: center;
-    }
-    .formFlex {
-        width: 100%;
-        margin-top: 0;
-        margin-left: 0;
-    }
-    .formFlex .FlexHorizontal {
-        margin-bottom: 0;
-        margin-top: -35px;
-    }
-    .application {
-        padding-left: 0;
-    }
-    #helpform {
-        width: 100%;
-        justify-content: center;
-    }
-    #telephone2 {
-        width: 86%;
-        height: 76px;
-        margin: 0;
-        left: 0;
-        right: 0;
-    }
-    #sendbtnShow {
-        border: 0;
-        margin-top: 2px;
-        right: 7.2%;
-        width: 73px;
-        height: 70px;
-        background: url(helpBtn.png);
-        background-position: center -20px;
-        content: "";
-        padding: 0;
-    }
-    .hideInMobile {
-        display: none;
-    }
-
-    .FlexHorizontal>div:last-child {
-        align-self: center;
-    }
-
-    .bals58{
-        text-align: center;
-    }
-
+  .bals58 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 770px) {
-    .video-block__inner-wrapper {
-       margin-top: 0;
+  .video-block__inner-wrapper {
+    margin-top: 0;
+  }
 
-    }
+  .video-block__video {
+    margin-bottom: -30px;
+    margin-top: -50px;
+  }
 
-    .video-block__video {
-        margin-bottom: -30px;
-        margin-top: -50px;
-    }
+  .video-block__form {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .formTitle {
+    font-size: 14px;
+  }
+  .formText {
+    font-size: 14px;
+  }
+  .form {
+    background: #e8eff9;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  .formInputs {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
+  .form-input-material input {
+    height: 50px;
+    font-size: 16px;
+  }
+  .form-block__iphone {
+    width: 119px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .phoneImg {
+    width: 29px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .callback-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .formTitle {
+    font-size: 18px;
+  }
+  .formText {
+    font-size: 18px;
+  }
+  .form {
+    background: #e8eff9;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
-    .video-block__form {
-        padding-top: 50px;
-    }
+  .form-input-material input {
+    height: 73px;
+    font-size: 20px;
+  }
+  .form-block__iphone {
+    width: 184px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .phoneImg {
+    width: 46px;
+    height: 39px;
+  }
+  .formInputs {
+    padding-left: 10px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .callback-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .formTitle {
+    font-size: 20px;
+  }
+  .formText {
+    font-size: 20px;
+  }
+  .form {
+    background: #e8eff9;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .form-input-material input {
+    height: 73px;
+    font-size: 20px;
+  }
+  .form-block__iphone {
+    width: 209px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .phoneImg {
+    width: 46px;
+    height: 39px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .callback-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .formTitle {
+    font-size: 24px;
+  }
+  .formText {
+    font-size: 24px;
+  }
+  .form {
+    background: #e8eff9;
+    padding-top: 91px;
+    padding-bottom: 91px;
+  }
+
+  .form-input-material input {
+    height: 73px;
+    font-size: 24px;
+  }
+  .form-block__iphone {
+    width: 264px;
+    height: 73px;
+    font-size: 20px;
+  }
+  .phoneImg {
+    width: 57px;
+    height: 57px;
+  }
 }

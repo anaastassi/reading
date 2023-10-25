@@ -15,10 +15,22 @@
   </head>
   <body>
     <header class="header">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-transparent fixed-left"
-      >
+      <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" id="logo" href="#">
+          <img src="img/logo-read.png" alt="" width="59" height="58" />
+        </a>
         <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -40,21 +52,8 @@
               </li>
             </ul>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
-        <a class="navbar-brand" id="logo" href="#">
-          <img src="img/logo-read.png" alt="" width="59" height="58" />
-        </a>
+
         <div class="socials d-flex">
           <a class="navbar-brand contact-img" href="#">
             <img src="img/instagram.png" alt="" width="135" height="129" />
@@ -223,7 +222,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutUs">
+    <section class="aboutUs content">
       <div class="imgWrap"></div>
       <div class="aboutBorder">
         <div class="aboutTitle">
@@ -278,9 +277,110 @@
       </div>
       <div class="line"></div>
     </section>
+    <section class="blog content">
+      <p class="blogTitle">Матеріали в блозі ></p>
+      <div class="blogContent">
+        <div class="sidebar">
+          <a class="bodyM active" href="#" onclick="changeActive(this)"
+            >Базове читання</a
+          >
+          <a class="bodyM" href="#" onclick="changeActive(this)"
+            >Швидкочитання</a
+          >
+          <a class="bodyM" href="#" onclick="changeActive(this)"
+            >Розвиваючі вправи</a
+          >
+          <a class="bodyM" href="#" onclick="changeActive(this)"
+            >Для дітей 4 - 6 років</a
+          >
+          <a class="bodyM" href="#" onclick="changeActive(this)"
+            >Для дітей 7 - 9 років</a
+          >
+          <a class="bodyM" href="#" onclick="changeActive(this)"
+            >Для дітей 10 - 14 років</a
+          >
+        </div>
+        <div class="articleGrid">
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Розвиваючі вправи</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Розвиваючі вправи</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Розвиваючі вправи</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="buttonsWrap">
+        <div class="empty"></div>
+        <div class="buttons">
+          <div class="arrows">
+            <div class="arrowBtn"></div>
+            <div class="pagesDesktop">
+              <div class="page">
+                <p>5</p>
+                <p>Сторінка</p>
+              </div>
+              <div class="page">
+                <p>73</p>
+                <p>Кількість статтей</p>
+              </div>
+            </div>
+            <div class="arrowBtn"></div>
+          </div>
+          <div class="pagesMob">
+            <div class="page">
+              <p>5</p>
+              <p>Сторінка</p>
+            </div>
+            <div class="page">
+              <p>73</p>
+              <p>Кількість статтей</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="form">
-      <div class="form-block__inner-wrapper">
-        <div class="form-block__video-wrapper container">
+      <div class="form-block__inner-wrapper content">
+        <div class="form-block__video-wrapper">
           <div class="form-block__form">
             <form
               class="callback-form"
@@ -289,45 +389,50 @@
               action=""
             >
               <div class="form-block__description">
-                <h2>Бажаєте відвідати пробний <br />безкоштовний урок?</h2>
-                <h3>
-                  Наш <strong>менеджер зателефонує</strong> Вам, допоможе
-                  підібрати курс для Вашої дитини і
-                  <strong>запише на пробний безкоштовний урок.</strong>
+                <h3 class="formTitle">
+                  Бажаєте відвідати пробний <br />безкоштовний урок?
                 </h3>
+                <p class="formText">
+                  Наш менеджер зателефонує Вам, допоможе підібрати курс для
+                  Вашої дитини і запише на пробне заняття
+                </p>
               </div>
-              <div class="form-input-material">
-                <input
-                  type="text"
-                  name="name"
-                  id="form-name"
-                  placeholder=" "
-                  autocomplete="off"
-                  class="form-control-material"
-                  required=""
-                />
-                <label for="form-name">Ім'я</label>
-              </div>
-              <div class="form-input-material">
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  placeholder="+38 (0__) ___-__-__"
-                  class="form-control-material"
-                  required=""
-                  inputmode="text"
-                />
-                <label for="form-phone"></label>
-              </div>
-              <div
-                class="form-block__submit-button action-button"
-                data-toggle="modal"
-                data-target="#secondModal"
-                onclick="insertSecondPhone(this)"
-              >
-                <div class="form-block__iphone"></div>
-                <span>Чекаю на дзвінок!</span>
+              <div class="formInputs">
+                <div class="form-input-material">
+                  <input
+                    type="text"
+                    name="name"
+                    id="form-name"
+                    placeholder="Ім'я"
+                    autocomplete="off"
+                    class="form-control-material"
+                    required=""
+                  />
+                  <label for="form-name"></label>
+                </div>
+                <div class="form-input-material">
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="+38 (0__) ___-__-__"
+                    class="form-control-material"
+                    required=""
+                    inputmode="text"
+                  />
+                  <label for="form-phone"></label>
+                </div>
+                <div
+                  class="form-block__submit-button action-button"
+                  data-toggle="modal"
+                  data-target="#secondModal"
+                  onclick="insertSecondPhone(this)"
+                >
+                  <div class="form-block__iphone">
+                    <img class="phoneImg" src="img/phoneBtn.png" />
+                    <span>Чекаю на<br />дзвінок!</span>
+                  </div>
+                </div>
               </div>
               <div
                 class="modal fade"
@@ -377,7 +482,7 @@
         </div>
       </div>
     </section>
-    <section class="ourAim">
+    <section class="ourAim content">
       <p class="aim">НАША МЕТА</p>
       <p class="aimText">
         Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная
@@ -417,6 +522,29 @@
       </p>
       <div class="line"></div>
     </section>
+    <footer class="footer content">
+      <div class="istaText">
+        <div class="instagram">
+          <img src="img/instagram.png" />
+          <span>@skorochtenie_prana</span>
+        </div>
+        <p class="details">
+          Детальніше про курси швидкочитання у<br />нашому інстаграм акаунті.
+        </p>
+      </div>
+      <div class="schedule">
+        <div class="time">
+          <span class="scheduleTitle">Графік роботи:</span>
+          <p class="hours">
+            ПН.-ПТ. с 9:00 до 21:00 <br />СБ.-НД. с 9:00 до 18:00
+          </p>
+        </div>
+        <div class="phones">
+          <span class="phoneTitle">Телефони: </span>
+          <p class="numbers">+38 (066) 856 85 35 <br />+38 (063) 519 38 68</p>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="slider.js"></script>
@@ -430,5 +558,6 @@
   <script src="https://unpkg.com/popper.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
   <script src="modal.js"></script>
+  <script src="sidebar.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
 </html>

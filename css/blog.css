@@ -1,0 +1,470 @@
+.blog {
+  padding-top: 14px;
+  padding-bottom: 25px;
+}
+.card:nth-child(3) {
+  display: none;
+}
+.sidebar {
+  display: flex;
+  width: 30%;
+  overflow: auto;
+  white-space: nowrap;
+  height: auto;
+  position: relative;
+  /* margin: auto; */
+  min-width: 0;
+  flex-direction: column;
+  margin-bottom: 60px;
+  gap: 12px;
+}
+.blogContent {
+  display: flex;
+  gap: 2%;
+  margin-top: 15px;
+}
+.buttonsWrap {
+  padding-top: 16px;
+  display: flex;
+  gap: 2%;
+}
+.empty {
+  width: 30%;
+}
+.buttons {
+  width: 70%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.sidebar a {
+  float: left;
+  color: #000;
+}
+.sidebar a:hover {
+  text-decoration: none;
+}
+div.contentArticles {
+  margin-left: 116px;
+}
+.card .readPostLink {
+  color: #ababab;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px !important;
+}
+.card-body p {
+  margin-bottom: 0 !important;
+}
+.card .readPostLink img {
+  width: 24px;
+  height: 24px;
+  display: inline;
+}
+.card {
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.tag {
+  border-radius: 6px;
+  background: #5c9ff9;
+  color: #fff;
+  padding: 2px 6px;
+}
+.tags {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 5px;
+}
+.altTag {
+  border-radius: 6px;
+  background: #e8eff9;
+  padding: 2px 6px;
+}
+.card .card-title {
+  color: black;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+.blogTitle {
+  color: #1e5391;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.blogText {
+  color: #000;
+
+  font-family: Raleway;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 300;
+}
+.tags {
+  color: #5e91cd;
+
+  text-align: center;
+  font-family: Raleway;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+}
+.articleGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 12px;
+  width: 70%;
+  margin: auto;
+}
+.bodyM {
+  color: black;
+  white-space: pre-wrap;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  padding: 5px 2px;
+  text-align: center;
+  height: fit-content;
+  border-radius: 11px;
+  background: rgba(104, 98, 173, 0.31);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.sidebar .active {
+  color: #fff;
+  font-weight: 700;
+  background: rgba(104, 98, 173, 0.78);
+}
+.blackArrow {
+  width: 23px;
+  height: 11.8px;
+}
+.secondBtn {
+  display: flex;
+  padding: 22px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 100px;
+  background: #fff;
+  padding: 22px 22px;
+  height: 57px;
+  width: fit-content;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+.btnInside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: auto;
+}
+.arrowImg {
+  background-image: url("../img/blackArrow.png");
+  background-size: cover;
+  width: 23px;
+  height: 11px;
+}
+.letsTalkArrow {
+  background-image: url("../img/whiteArrow.png");
+  background-size: cover;
+  width: 23px;
+  height: 11px;
+}
+#letsTalkBtn:hover {
+  background-color: white;
+  color: black;
+}
+#letsTalkBtn:hover .letsTalkArrow {
+  background-image: url("../img/blackArrow.png");
+  transform: translateX(3px);
+}
+.button:hover .arrowImg {
+  background-image: url("../img/whiteArrow.png");
+  transform: translateX(3px);
+}
+.card .readPostLink:hover .grayArrow {
+  background-image: url("../img/readArrow.png");
+  transform: translateX(10px);
+}
+.card .readPostLink div:hover {
+  color: white;
+}
+.grayArrow {
+  background-image: url(../img/arrow.png);
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.aFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.borderDiv {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.card-img-top {
+  transition-duration: 0.3s;
+}
+.card:hover .card-img-top {
+  transform: scale(110%);
+}
+.arrowBtn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+  height: 20px;
+  border-radius: 15px;
+  background: #5e91cd url(../img/leftArrow.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.arrowBtn:nth-child(3) {
+  background: #5e91cd url(../img/rightArrow.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+.pagesMob {
+  display: flex;
+}
+.pagesDesktop {
+  display: none;
+}
+.page p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.page p:nth-child(2) {
+  font-size: 6px;
+}
+.page {
+  border-style: solid;
+  border-image: linear-gradient(transparent, black) 1;
+  border-top: 0;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .page p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .page p:nth-child(2) {
+    font-size: 6px;
+  }
+  .arrowBtn {
+    border-radius: 26px;
+    background-size: 80%;
+  }
+  .arrowBtn:nth-child(3) {
+    border-radius: 26px;
+    background-size: 80%;
+  }
+  .pagesMob {
+    display: none;
+  }
+  .empty {
+    width: 0;
+  }
+  .arrowBtn {
+    width: 142px;
+    height: 57px;
+  }
+  .pagesDesktop {
+    display: flex;
+    width: 250px;
+    height: fit-content;
+  }
+  .arrows {
+    align-items: flex-end;
+  }
+  .buttons {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .blog {
+    padding-top: 69px;
+    padding-bottom: 56px;
+  }
+  .blogContent {
+    flex-direction: column;
+  }
+  .blogTitle {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .bodyM {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .sidebar {
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 37px;
+    padding-top: 37px;
+  }
+  .articleGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 49px;
+    row-gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .card-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .blogText {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .tag,
+  .altTag {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .tags {
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  .buttonsWrap {
+    gap: 0;
+    padding-top: 29px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page p {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .page p:nth-child(2) {
+    font-size: 10px;
+  }
+  .blogContent {
+    flex-direction: column;
+  }
+  .blogTitle {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .bodyM {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5px 10px;
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    gap: 32px;
+    padding-bottom: 82px;
+  }
+  .articleGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 36px;
+  }
+  .card-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .blogText {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .tag,
+  .altTag {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .tags {
+    gap: 12px;
+  }
+  .card-body {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .arrowBtn {
+    width: 173px;
+    height: 57px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttonsWrap {
+    padding-top: 58px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .articleGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card:nth-child(3) {
+    display: block;
+  }
+  .blogTitle {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .bodyM {
+    font-size: 24px;
+  }
+  .pagesDesktop {
+    width: 409px;
+  }
+  .page p {
+    font-size: 36px;
+  }
+  .page p:nth-child(2) {
+    font-size: 14px;
+  }
+  .arrowBtn {
+    width: 214px;
+    height: 67px;
+  }
+}
