@@ -21,7 +21,7 @@
     color: #000;
     /*height: 58px;*/
     /*margin-bottom: 32px;*/
-    /*margin-top: -4px;*/
+    margin-top: -2px;
 }
 .nav-link{
     color: #000 !important;
@@ -97,6 +97,9 @@
 /*        width: 135px;*/
 /*    height: 129px;*/
 /*    }*/
+    .navbar{
+        margin-top: 12px;
+    }
     #logo img{
         width: 135px;
         /*height: 38.7px;*/
@@ -154,6 +157,7 @@
     /*}*/
 }
 @media screen and (min-width: 1200px) {
+
     /*#logo{*/
     /*    width: 166px;*/
     /*    height: 159px;*/
@@ -162,11 +166,11 @@
         width: 159px;
         /*height: 48.04px;*/
     }
-/*    .navbar{*/
-/*        height: 159px;*/
-/*        margin-bottom: 102px;*/
-/*        margin-top: -9px;*/
-/*    }*/
+    .navbar{
+        margin-top: 16px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .contact-img{
         width: 48.044px;
         height: 46.642px;
@@ -198,12 +202,7 @@
         width: 161px;
         /*height: 154px;*/
     }
-/*    .navbar{*/
-/*        height: 154px;*/
-/*        font-size: 16px;*/
-/*        margin-bottom: 118px;*/
-/*        margin-top: 2px;*/
-/*    }*/
+
     .contact-img{
         width: 55.025px;
         height: 55.098px;
