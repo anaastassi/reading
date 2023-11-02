@@ -153,10 +153,20 @@ div.contentArticles {
   background: rgba(104, 98, 173, 0.31);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.sidebar .active {
+.bodyM span{
+  font-family: "Radio Canada";
+  font-weight: 300;
+}
+.bodyM p{
+  margin-bottom: 0;
+}
+.sidebar .active{
   color: #fff;
   font-weight: 700;
-  background: rgba(104, 98, 173, 0.78);
+  background: #6862ADC7;
+}
+.sidebar .active span {
+  font-weight: 700;
 }
 .blackArrow {
   width: 23px;
