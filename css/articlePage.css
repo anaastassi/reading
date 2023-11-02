@@ -1,6 +1,11 @@
 .margin-top{
     margin-top: 20px;
 }
+iframe{
+    border-radius: 19px;
+    width:100%;
+    aspect-ratio: 16 / 9;
+}
 .articlePage .header{
     background-image: url(../img/articleBg.png);
     background-position: cover;

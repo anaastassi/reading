@@ -45,6 +45,11 @@
 .hours,
 .numbers {
   font-size: 8px;
+  font-weight: 400;
+}
+.hours span,
+.numbers span {
+  font-family: "Radio Canada";
   font-weight: 300;
 }
 .schedule {

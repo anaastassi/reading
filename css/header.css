@@ -30,7 +30,7 @@
   color: #000;
   /*height: 58px;*/
   /*margin-bottom: 32px;*/
-  margin-top: -2px;
+  padding-top: -2px;
 }
 .nav-link {
   color: #000 !important;
@@ -108,7 +108,7 @@
   /*    height: 129px;*/
   /*    }*/
   .navbar {
-    margin-top: 12px;
+    padding-top: 12px;
   }
   #logo img {
     width: 135px;
@@ -187,7 +187,7 @@
         /*height: 48.04px;*/
     }
     .navbar{
-        margin-top: 16px;
+        padding-top: 16px;
         padding-right: 15px;
         padding-left: 15px;
     }
