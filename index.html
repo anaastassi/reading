@@ -11,9 +11,11 @@
       crossorigin="anonymous"
     />
     <link href="css/main.css" rel="stylesheet" />
+    <script src="js/pages.js"></script>
     <title>Reading</title>
   </head>
-  <body>
+  <body onload="init()">
+    <div class="preview">
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
@@ -218,6 +220,7 @@
         </div>
       </div>
     </section>
+    </div>
     <section class="aboutUs content">
       <div class="imgWrap"></div>
       <div class="aboutBorder">
@@ -277,22 +280,22 @@
       <p class="blogTitle">Матеріали в блозі ></p>
       <div class="blogContent">
         <div class="sidebar">
-          <a class="bodyM active" href="#" onclick="changeActive(this)"
+          <a class="bodyM active" onclick="changeActive(this); filter('Базове читання')"
             >Базове читання</a
           >
-          <a class="bodyM" href="#" onclick="changeActive(this)"
+          <a class="bodyM"  onclick="changeActive(this); filter('Швидкочитання')"
             >Швидкочитання</a
           >
-          <a class="bodyM" href="#" onclick="changeActive(this)"
+          <a class="bodyM"  onclick="changeActive(this); filter('Розвиваючі вправи')"
             >Розвиваючі вправи</a
           >
-          <a class="bodyM" href="#" onclick="changeActive(this)"
+          <a class="bodyM"  onclick="changeActive(this); filter('Для дітей 4 - 6 років')"
             >Для дітей 4 - 6 років</a
           >
-          <a class="bodyM" href="#" onclick="changeActive(this)"
+          <a class="bodyM" onclick="changeActive(this); filter('Для дітей 7 - 9 років')"
             >Для дітей 7 - 9 років</a
           >
-          <a class="bodyM" href="#" onclick="changeActive(this)"
+          <a class="bodyM"  onclick="changeActive(this); filter('Для дітей 10 - 14 років')"
             >Для дітей 10 - 14 років</a
           >
         </div>
@@ -321,7 +324,7 @@
                 <p class="altTag">Статті</p>
                 <p class="tag">Розвиваючі вправи</p>
               </div>
-              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <h5 class="card-title bodyS">Заголовок 2</h5>
               <div class="blogText">
                 текст текст текст текст текст текст текст текст ..
               </div>
@@ -336,7 +339,7 @@
                 <p class="altTag">Статті</p>
                 <p class="tag">Розвиваючі вправи</p>
               </div>
-              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <h5 class="card-title bodyS">Заголовок 3</h5>
               <div class="blogText">
                 текст текст текст текст текст текст текст текст ..
               </div>
@@ -351,7 +354,37 @@
                 <p class="altTag">Статті</p>
                 <p class="tag">Розвиваючі вправи</p>
               </div>
-              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <h5 class="card-title bodyS">Заголовок 4</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Швидкочитання</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 5</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Швидкочитання</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 6</h5>
               <div class="blogText">
                 текст текст текст текст текст текст текст текст ..
               </div>
@@ -366,7 +399,37 @@
                 <p class="altTag">Статті</p>
                 <p class="tag">Розвиваючі вправи</p>
               </div>
-              <h5 class="card-title bodyS">Заголовок 1</h5>
+              <h5 class="card-title bodyS">Заголовок 7</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Розвиваючі вправи</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 8</h5>
+              <div class="blogText">
+                текст текст текст текст текст текст текст текст ..
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <div class="borderDiv">
+              <img src="img/article1.png" class="card-img-top" />
+            </div>
+            <div class="card-body">
+              <div class="tags">
+                <p class="altTag">Статті</p>
+                <p class="tag">Розвиваючі вправи</p>
+              </div>
+              <h5 class="card-title bodyS">Заголовок 9</h5>
               <div class="blogText">
                 текст текст текст текст текст текст текст текст ..
               </div>
@@ -378,26 +441,26 @@
         <div class="empty"></div>
         <div class="buttons">
           <div class="arrows">
-            <div class="arrowBtn"></div>
+            <div onclick="swapLeft()" class="arrowBtn"></div>
             <div class="pagesDesktop">
               <div class="page">
-                <p>5</p>
+                <p id="pages">1</p>
                 <p>Сторінка</p>
               </div>
               <div class="page">
-                <p>73</p>
+                <p id="articles">73</p>
                 <p>Кількість статтей</p>
               </div>
             </div>
-            <div class="arrowBtn"></div>
+            <div onclick="swapRight()"  class="arrowBtn"></div>
           </div>
           <div class="pagesMob">
             <div class="page">
-              <p>5</p>
+              <p id="pagesMob">1</p>
               <p>Сторінка</p>
             </div>
             <div class="page">
-              <p>73</p>
+              <p id="articlesMob">73</p>
               <p>Кількість статтей</p>
             </div>
           </div>
