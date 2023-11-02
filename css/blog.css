@@ -134,6 +134,7 @@ div.contentArticles {
   margin: auto;
 }
 .bodyM {
+  font-family: "Raleway";
   min-height: 35px;
   display: flex;
   align-items: center;
@@ -143,7 +144,7 @@ div.contentArticles {
   text-align: center;
   font-size: 10px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   width: 100%;
   padding: 5px 2px;
   text-align: center;
