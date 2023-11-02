@@ -27,8 +27,8 @@ function validation(phone) {
         insertedSecondPhone.style.color = "red";
         return false;
     }else {
-        btn2.setAttribute("onclick","sendMail('name3','phone3')");
-        btn2.setAttribute("href","thank-you.html");
+        btn2.setAttribute("onclick","sendMail('form-name','phone')");
+        // btn2.setAttribute("href","thank-you.html");
         insertedSecondPhone.style.color = "green";
     }
     return true
