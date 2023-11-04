@@ -108,7 +108,7 @@
   /*    height: 129px;*/
   /*    }*/
   .navbar {
-    padding-top: 12px;
+    padding-top: 24px;
   }
   #logo img {
     width: 135px;
@@ -187,7 +187,7 @@
         /*height: 48.04px;*/
     }
     .navbar{
-        padding-top: 16px;
+        padding-top: 51px;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -259,9 +259,7 @@
   }
 }
 @media screen and (min-width: 1900px) {
-  #logo {
-    top: 5px;
-  }
+
   #logo img {
     width: 220px;
     /*height: 50.5px;*/
