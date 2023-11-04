@@ -7,9 +7,11 @@ iframe{
     aspect-ratio: 16 / 9;
 }
 .articlePage .header{
+    min-height: 179px;
     background-image: url(../img/articleBg.png);
-    background-position: cover;
-    background-size: 100%;
+    background-position:center  bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 0;
 }
 .articlePage .footer{
@@ -53,6 +55,12 @@ max-width: 1272px;
 .articlePage .chapter1  .aboutTitle{
 justify-content: left;
 }
+
+@media screen and (min-width: 400px) {
+    .articlePage .header {
+        min-height: 220px;
+    }
+}
 @media screen and (min-width: 700px) {
     .articlePage .bodyM{
         width: 27%;
@@ -72,6 +80,9 @@ justify-content: left;
 }
 @media screen and (min-width: 1200px) {
     .articlePage .header{
+        background-image: url(../img/article_backg.png);
+        background-position: cover;
+        background-size: 100%;
         min-height: 100vh;
     } 
     .articlePage .articleGrid{
@@ -94,6 +105,11 @@ justify-content: left;
     }
 }
 @media screen and (min-width: 1900px) {
+    .articlePage .header {
+        background-image: url(../img/articleBg.png);
+        background-position: cover;
+        background-size: 100%;
+    }
     .articlePage .aboutBorder{
         
         padding:39px 137px;
