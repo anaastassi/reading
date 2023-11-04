@@ -1,9 +1,12 @@
-.footer {
+.footer{
   background: linear-gradient(
     180deg,
     rgba(217, 217, 217, 0) 0%,
     rgba(92, 159, 249, 0.2) 100%
   );
+  width: 100%;
+}
+.footerWrap {
   max-width: 1500px;
   display: flex;
   flex-direction: column;
@@ -58,7 +61,7 @@
 }
 
 @media screen and (min-width: 707px) {
-  .footer {
+  .footerWrap {
     flex-direction: row;
     justify-content: center;
   }

@@ -5,7 +5,7 @@
   overflow: hidden;
   width: 5000px;
   margin: 50px auto;
-  background: #fff;
+  background: transparent;
 }
 .animation {
   width: auto;
