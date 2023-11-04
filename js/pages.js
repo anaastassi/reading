@@ -28,11 +28,9 @@ function swapRight() {
         pageNum++
     }
     else{
-        pageNum = Math.round(arr.length/size)
-        visibleElementFrom = arr.length-size;
-        if (pageNum==0)
-            pageNum = 1
+       document.getElementById("btnR").onclick = ""
     }
+    document.getElementById("btnL").onclick = swapLeft
     swap()
 }
 
@@ -42,10 +40,9 @@ function swapLeft() {
         pageNum--
     }
     else{
-        visibleElementFrom = 0;
-        pageNum = 1
+        document.getElementById("btnL").onclick = ""
     }
-
+    document.getElementById("btnR").onclick = swapRight
     swap()
 }
 
@@ -71,4 +68,7 @@ function filter(txt) {
     pageNum = 1
     visibleElementFrom = 0
     swap()
+
+    document.getElementById("btnR").onclick = swapRight
+    document.getElementById("btnL").onclick = swapLeft
 }
