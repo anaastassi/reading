@@ -277,7 +277,7 @@
       </div>
       <div class="line"></div>
     </section>
-    <section class="blog content">
+    <section id="blog" class="blog content">
       <p class="blogTitle">Матеріали в блозі ></p>
       <div class="blogContent">
         <div class="sidebar">
@@ -442,7 +442,9 @@
         <div class="empty"></div>
         <div class="buttons">
           <div class="arrows">
-            <div id="btnL" onclick="swapLeft()" class="arrowBtn"></div>
+            <a href="#blog" onclick="swapLeft()" class="arrowBtn">
+            <div id="btnL"  class=""></div>
+            </a>
             <div class="pagesDesktop">
               <div class="page">
                 <p id="pages">1</p>
@@ -453,7 +455,9 @@
                 <p>Кількість статтей</p>
               </div>
             </div>
-            <div id="btnR" onclick="swapRight()"  class="arrowBtn"></div>
+            <a href="#blog"  onclick="swapRight()" class="arrowBtn arrowBtnR">
+            <div id="btnR"   class=" "></div>
+            </a>
           </div>
           <div class="pagesMob">
             <div class="page">

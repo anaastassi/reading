@@ -135,7 +135,8 @@ div.contentArticles {
 }
 .bodyM {
   font-family: "Raleway";
-  min-height: 48px;
+  cursor: pointer;
+  min-height: 39px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,7 +260,7 @@ div.contentArticles {
   background-position: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.arrowBtn:nth-child(3) {
+.arrowBtnR {
   background: #5e91cd url(../img/rightArrow.png) no-repeat;
   background-size: contain;
   background-position: center;
@@ -303,7 +304,7 @@ div.contentArticles {
     border-radius: 26px;
     background-size: 80%;
   }
-  .arrowBtn:nth-child(3) {
+  .arrowBtnR {
     border-radius: 26px;
     background-size: 80%;
   }
@@ -408,6 +409,8 @@ div.contentArticles {
     font-style: normal;
     font-weight: 400;
     padding: 5px 10px;
+
+    min-height: 48px;
   }
   .sidebar {
     flex-direction: row;
