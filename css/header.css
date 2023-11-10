@@ -1,3 +1,11 @@
+/*header{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-around;*/
+/*    align-content: flex-start;*/
+/*    align-items: center;*/
+/*}*/
+
 .navbar-nav {
   align-items: center;
 }
@@ -97,6 +105,30 @@
   padding-right: 20px;
   margin-top: 10px;
   justify-content: center;
+
+}
+.btnDown{
+    position: fixed;
+    background: url(../img/back_btn_ar_mob.png), url(../img/btn_ar_mob.png);
+    background-size: cover, 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color;
+    right: 2px;
+    bottom: 50px;
+    width: 18px;
+    height: 28px;
+    display: none;
+}
+.center_arrow{
+    width: 17px;
+}
+.arr-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    padding-bottom:  2%;
 }
 @media screen and (min-width: 700px) {
   /*    .navbar-light .navbar-toggler-icon {*/
@@ -147,6 +179,23 @@
     border-radius: 24px;
     background: rgba(92, 159, 249, 0.13);
   }
+    .btnDown{
+        background: url(../img/back_btn_down.png), url(../img/Arrow_btn_down.png);
+        background-size: cover, 60%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: color;
+
+        right: 25px;
+        bottom: 50px;
+        width: 41px;
+        height: 39px;
+
+    }
+    .center_arrow{
+        width: 32px;
+    }
+
 }
 @media screen and (min-width: 992px) {
     .preview{
@@ -216,6 +265,24 @@
             border-radius: 24px;
             background: rgba(92, 159, 249, 0.13);
         }
+    .btnDown{
+
+        right: 25px;
+        bottom: 50px;
+        width: 73px;
+        height: 70px;
+
+    }
+    .center_arrow{
+        width: 56px;
+    }
+    .arr-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 22%;
+        padding-bottom:  2%;
+    }
 }
 @media screen and (min-width: 1400px) {
     .slider{
@@ -290,6 +357,17 @@
   .ellipse {
     width: 973px;
   }
+    .btnDown{
+
+        right: 25px;
+        bottom: 50px;
+        width: 87px;
+        height: 83px;
+
+    }
+    .center_arrow{
+        width: 85px;
+    }
 }
 
 
