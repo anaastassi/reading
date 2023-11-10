@@ -84,8 +84,8 @@ justify-content: left;
 @media screen and (min-width: 1200px) {
     .articlePage .header{
         background-image: url(../img/article_backg.png);
-        background-position: cover;
-        background-size: 100%;
+        background-position: bottom ;
+        background-size: cover;
         min-height: 100vh;
     } 
     .articlePage .articleGrid{
