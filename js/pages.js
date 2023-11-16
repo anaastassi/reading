@@ -4,10 +4,13 @@ let arr;
 let pageNum = 1;
 let pageElement;
 let articleElement;
+let sliderContainerMob;
 function init() {
     arr = document.getElementsByClassName("card")
     pageElement = document.getElementById("pagesMob")
     articleElement = document.getElementById("articlesMob")
+    sliderContainerMob = document.getElementById("sliderMob")
+    invisible()
 
     let w = document.documentElement.clientWidth
     if (w>700){
@@ -20,6 +23,14 @@ function init() {
         arr[i].style.display = "none"
     }
     articleElement.innerText = arr.length
+}
+function invisible(){
+    for (let i = 0; i < sliderContainerMob.children.length; i++) {
+
+
+        sliderContainerMob.children[i].style.display = "none"
+    }
+    sliderContainerMob.children[0].style.display = "block"
 }
 
 function swapRight() {
@@ -71,4 +82,27 @@ function filter(txt) {
 
     document.getElementById("btnR").onclick = swapRight
     document.getElementById("btnL").onclick = swapLeft
+}
+let slideCount = 0
+function leftSwapMob() {
+    sliderContainerMob.children[slideCount].style.display = "none"
+
+    if (0<slideCount)
+        slideCount--
+    else
+        slideCount=sliderContainerMob.children.length-1
+
+    sliderContainerMob.children[slideCount].style.display = "block"
+}
+function rightSwapMob() {
+
+
+    sliderContainerMob.children[slideCount].style.display = "none"
+
+    if (sliderContainerMob.children.length>slideCount+1)
+        slideCount++
+    else
+        slideCount=0
+
+    sliderContainerMob.children[slideCount].style.display = "block"
 }

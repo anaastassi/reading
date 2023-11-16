@@ -14,7 +14,7 @@
   <link href="css/articlePage.css" rel="stylesheet" />
   <title>Article</title>
 </head>
-<body class="articlePage">
+<body class="articlePage" onload="init()">
   <a href="#header">
     <div id="btnDown" class="btnDown"></div>
   </a>
@@ -218,8 +218,8 @@
   <section class="blog content">
   <p class="blogTitle">Схожа тематика</p>
   <div class="arrowsDiv">
-    <img class="arrowSlider" src="img/arrowL.png">
-  <div class="articleGrid margin-top">
+    <img onclick="leftSwapMob()" class="arrowSlider" src="img/arrowL.png">
+  <div id="sliderMob" class="articleGrid margin-top">
     
     <a href="article.html" class="card">
       <div class="borderDiv">
@@ -245,7 +245,7 @@
           <p class="altTag">Статті</p>
           <p class="tag">Розвиваючі вправи</p>
         </div>
-        <h5 class="card-title bodyS">Заголовок 1</h5>
+        <h5 class="card-title bodyS">Заголовок 2</h5>
         <div class="blogText">
           текст текст текст текст текст текст текст текст ..
         </div>
@@ -260,7 +260,7 @@
           <p class="altTag">Статті</p>
           <p class="tag">Розвиваючі вправи</p>
         </div>
-        <h5 class="card-title bodyS">Заголовок 1</h5>
+        <h5 class="card-title bodyS">Заголовок 3</h5>
         <div class="blogText">
           текст текст текст текст текст текст текст текст ..
         </div>
@@ -268,7 +268,7 @@
     </a>
     
     </div>
-    <img class="arrowSlider" src="img/arrowR.png">
+    <img onclick="rightSwapMob()" class="arrowSlider" src="img/arrowR.png">
 </div>
 </section>
   <section class="form">
@@ -403,6 +403,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/pages.js"></script>
 <script src="js/scroll.js"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
