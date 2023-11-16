@@ -1,14 +1,28 @@
 body{
     background: white;
 }
+.aboutTitle{
+    overflow: hidden;
+    gap:5px;
+}
 .margin-top{
     margin-top: 20px;
+}
+.footer{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 iframe{
     border-radius: 19px;
     width:100%;
     aspect-ratio: 16 / 9;
 }
+.lines{
+    width: 26px;
+    height: 7px;
+  }
 .arrowsDiv{
     display: flex;
     align-items: center;
@@ -79,6 +93,13 @@ justify-content: left;
     }
 }
 @media screen and (min-width: 700px) {
+    .aboutTitle{
+        gap:20px;
+    }
+    .lines{
+        width: 116px;
+        height: 25px;
+    }
     .articleGrid .card:nth-child(2){
         display: block;
     }
@@ -102,6 +123,9 @@ justify-content: left;
           
 }
 @media screen and (min-width: 1200px) {
+    .lines{
+        width: 202px;
+    }
     .articleGrid .card:nth-child(3){
         display: block;
     }
@@ -122,6 +146,9 @@ justify-content: left;
         }
 }
 @media screen and (min-width: 1400px) {
+    .lines{
+        width: 237px;
+    }
     .articlePage .aboutBorder{
         
         padding:50px 69px;

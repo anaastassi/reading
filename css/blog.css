@@ -78,9 +78,10 @@ div.contentArticles {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .tag {
-  border-radius: 6px;
+  border-radius: 8px;
   background: #5c9ff9;
   color: #fff;
+  font-weight: 400;
   padding: 2px 6px;
 }
 .tags {
@@ -92,6 +93,7 @@ div.contentArticles {
   border-radius: 6px;
   background: #e8eff9;
   padding: 2px 6px;
+  font-weight: 700;
 }
 .card .card-title {
   color: black;
@@ -286,10 +288,17 @@ div.contentArticles {
 }
 .page {
   border-style: solid;
+  border-width: 1px;
   border-image: linear-gradient(transparent, black) 1;
   border-top: 0;
   width: 100%;
   text-align: center;
+}
+.pagesDesktop :nth-child(1) {
+  border-right:0 ;
+}
+.pagesMob :nth-child(1) {
+  border-right:0 ;
 }
 @media screen and (min-width: 700px) {
   .page p {
@@ -362,7 +371,7 @@ div.contentArticles {
     width: 100%;
     max-width: 1200px;
   }
-  .card-title {
+  .card .card-title {
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -424,7 +433,7 @@ div.contentArticles {
     column-gap: 80px;
     row-gap: 36px;
   }
-  .card-title {
+  .card .card-title {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
