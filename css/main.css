@@ -47,7 +47,32 @@ a:hover {
 .marginAuto {
   margin: auto;
 }
+.lines{
+  width: 63px;
+  
+}
+.lineL{
+  background-image: url(../img/lineLMob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.lineR{
+  background-image: url(../img/lineRMob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 @media screen and (min-width: 700px) {
+  .lineL{
+    background-image: url(../img/lineL.png);
+  }
+  .lineR{
+    background-image: url(../img/lineR.png);
+  }
+  .lines{
+    width: 102px;
+  }
   .content {
     padding-left: 64px;
     padding-right: 64px;
@@ -65,6 +90,9 @@ a:hover {
   }
 }
 @media screen and (min-width: 1200px) {
+  .lines{
+    width: 150px;
+  }
   .content {
     padding-left: 111px;
     padding-right: 111px;
@@ -72,6 +100,14 @@ a:hover {
 
 }
 @media screen and (min-width: 1900px) {
+  .lines{
+    width: 204px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* .lines{
+    width: 237px;
+  } */
   .content {
     padding-left: 228px;
     padding-right: 228px;
