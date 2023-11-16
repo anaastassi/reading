@@ -10,9 +10,9 @@ function init() {
     pageElement = document.getElementById("pagesMob")
     articleElement = document.getElementById("articlesMob")
     sliderContainerMob = document.getElementById("sliderMob")
-    invisible()
-
     let w = document.documentElement.clientWidth
+
+    invisible(w)
     if (w>700){
         size = 6
         pageElement = document.getElementById("pages")
@@ -22,10 +22,11 @@ function init() {
     for (let i = size; i < arr.length; i++) {
         arr[i].style.display = "none"
     }
-    articleElement.innerText = arr.length
+    if (articleElement!=null)
+        articleElement.innerText = arr.length
 }
-function invisible(){
-    if (sliderContainerMob==null)
+function invisible(w){
+    if (sliderContainerMob==null || w>700)
         return
     for (let i = 0; i < sliderContainerMob.children.length; i++) {
 
