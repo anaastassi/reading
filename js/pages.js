@@ -25,6 +25,8 @@ function init() {
     articleElement.innerText = arr.length
 }
 function invisible(){
+    if (sliderContainerMob==null)
+        return
     for (let i = 0; i < sliderContainerMob.children.length; i++) {
 
 
